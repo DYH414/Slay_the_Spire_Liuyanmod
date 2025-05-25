@@ -6,6 +6,6 @@
   "description": "三国杀刘焉",
   "version": "0.0.1",
   "sts_version": "01-27-2020",
-  "mts_version": "3.23.2",
+  "mts_version": "3.23.",
   "dependencies": ["basemod", "stslib"]
 }
