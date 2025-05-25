@@ -1,0 +1,180 @@
+{
+  "Liuyanmod:JiuPower": {
+    "NAME": "酒意激发",
+    "DESCRIPTIONS": ["你的下一张 #y攻击牌 造成 #b双倍伤害 。"]
+  },
+  "Liuyanmod:QinggangjianPower": {
+    "NAME": "青钢剑",
+    "DESCRIPTIONS": ["你的攻击无视敌人的格挡"]
+  },
+  "Liuyanmod:LimuPower": {
+    "NAME": "立牧",
+    "DESCRIPTIONS": ["下回合开始时无法使用攻击牌。"]
+  },
+
+  "Liuyanmod:XunshidaifaRetainPower": {
+    "NAME": "保留",
+    "DESCRIPTIONS": [
+      "这个回合可以额外保留 ",
+      " 张牌，回合结束时失去该能力。"
+    ]
+  },
+  "Liuyanmod:ZhoumuweiyiPower": {
+    "NAME": "州牧威仪",
+    "DESCRIPTIONS": [
+      "每打出 4 张技能牌，获得 1 点能量和 5 点格挡。"
+    ]
+  },
+  "Liuyanmod:ZhangbashemaoPower": {
+    "NAME": "丈八蛇矛",
+    "DESCRIPTIONS": [
+      "回合开始时你可以丢弃任意张牌，每丢弃两张获得 [R] "
+    ]
+  },
+  "Liuyanmod:BaguazhenPower": {
+    "NAME": "八卦阵",
+    "DESCRIPTIONS": [
+      "每经过3个回合，获得1层 #y缓冲 。"
+    ]
+  },
+  "Liuyanmod:ChituPower": {
+    "NAME": "赤兔",
+    "DESCRIPTIONS": [
+      "每回合第一次打出攻击牌时，获得 #b1 点 力量 。"
+    ]
+  },
+  "Liuyanmod:DiluPower": {
+    "NAME": "的卢",
+    "DESCRIPTIONS": [
+      "每回合第一次打出技能牌时，获得 #b1 点 敏捷 。"
+    ]
+  },
+  "Liuyanmod:QinglongyanyuedaoPower": {
+    "NAME": "青龙偃月刀",
+    "DESCRIPTIONS": [
+      "每回合第一次打出攻击牌后，接下来打出的1张攻击牌费用变为0。",
+      " 固有 。 NL 每回合第一次打出攻击牌后，接下来打出的 #b2 张攻击牌费用变为0。"
+    ]
+  },
+  "Liuyanmod:Renwangdun": {
+    "NAME": "仁王盾",
+    "DESCRIPTIONS": [
+      "当你受到的普通伤害小于或等于 ",
+      " 点时，免疫该伤害。"
+    ]
+  },
+
+  "Liuyanmod:QibuchengshiPower": {
+  "NAME": "七步成诗",
+  "DESCRIPTIONS": [
+    ""
+  ]
+},
+  "Liuyanmod:QilingongPower": {
+    "NAME": "麒麟弓",
+    "DESCRIPTIONS": [
+      "使用攻击牌时，使目标失去1点 力量 。"
+    ]
+  },
+  "Liuyanmod:NoBlockThisTurnPower": {
+    "NAME": "单刀赴会",
+    "DESCRIPTIONS": [
+      "这回合无法获得 格挡 。"
+    ]
+  },
+  "Liuyanmod:GejuPower": {
+    "NAME": "割据",
+    "DESCRIPTIONS": [
+      "每打出一张攻击牌，弃置", "张手牌。"
+    ]
+  },
+  "Liuyanmod:ZhugeLiannuPower": {
+    "NAME": "诸葛连弩",
+    "DESCRIPTIONS": [
+      "每打出一张攻击牌，将一张 *杀 加入手牌。"
+    ]
+  },
+  "Liuyanmod:ZhuoshaoPower": {
+    "NAME": "灼烧",
+    "DESCRIPTIONS": [
+      "当此敌人受到攻击时，受到 ",
+      " 点额外伤害。",
+      "每回合减少 1 层。"
+    ]
+  },
+  "Liuyanmod:ZhuqueYushanPower": {
+    "NAME": "朱雀羽扇",
+    "DESCRIPTIONS": [
+      "每当你对敌人造成伤害时，给予其 ",
+      " 层 #y灼烧 。"
+    ]
+  },
+"Liuyanmod:HuoshaolianyingPower":{
+  "NAME": "火烧连营",
+  "DESCRIPTIONS": [
+    "造成的灼烧伤害会影响所有敌人。"
+  ]
+},
+  "Liuyanmod:TengjiaPower": {
+    "NAME": "藤甲",
+    "DESCRIPTIONS": [
+      "每当你受到攻击，攻击者获得 ",
+      " 层 liuyanmod:灼烧 。"
+    ]
+  },
+  "Liuyanmod:TiesuoPower": {
+    "NAME": "铁索连环",
+    "DESCRIPTIONS": [
+      "处于连环状态的敌人会一起受到伤害。"
+    ]
+  },
+  "Liuyanmod:LongqianPower": {
+    "NAME": "龙潜",
+    "DESCRIPTIONS": [
+      "本回合结束时根据你是否使用攻击/技能牌给予能量与抽牌。"
+    ]
+  },
+  "Liuyanmod:QunxiongGejuPower": {
+    "NAME": "群雄割据",
+    "DESCRIPTIONS": [
+      "若你拥有2层以上的割据，每打出一张攻击牌，回复割据层数的能量。"
+    ]
+  },
+  "Liuyanmod:LeBuSiShuPower": {
+    "NAME": "乐不思蜀",
+    "DESCRIPTIONS": [
+      "回合结束时，有75%概率使目标下回合无法行动。"
+    ]
+  },
+  "Liuyanmod:ZhuLuPower": {
+    "NAME": "逐鹿",
+    "DESCRIPTIONS": [
+      "每打出一张攻击牌，摸 #b",
+      " 张牌。"
+    ]
+  },
+  "Liuyanmod:ShaMarkPower": {
+    "NAME": "杀标记",
+    "DESCRIPTIONS": ["本回合受到过 #b杀 的伤害。"]
+  },
+  "Liuyanmod:ChoucePower": {
+    "NAME": "筹策",
+    "DESCRIPTIONS": [
+      "你的下 ",
+      " 张技能卡费用变为 0。"
+    ]
+  },
+  "Liuyanmod:ChouliangPower": {
+    "NAME": "筹粮",
+    "DESCRIPTIONS": [
+      "你的下 ",
+      " 不消耗能量。"
+    ]
+  },
+  "Liuyanmod:GuzhenDaidiPower": {
+    "NAME": "固阵待敌",
+    "DESCRIPTIONS": ["若本回合未使用攻击牌，回合结束时获得 ", " 点格挡。"]
+  }
+
+
+}

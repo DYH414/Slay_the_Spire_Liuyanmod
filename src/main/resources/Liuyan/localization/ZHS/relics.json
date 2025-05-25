@@ -1,0 +1,23 @@
+{
+  "ExampleMod:Tusheyugui": {
+    "NAME": "图射玉圭",
+    "FLAVOR": "暗藏一统之志。",
+    "DESCRIPTIONS": [
+      "当你打出非能力牌时，若手牌中没有攻击牌，则摸与该牌指定目标数相同张数的牌。"
+    ]
+  },
+  "Liuyanmod:GejuZhiYin": {
+    "NAME": "割据之印",
+    "FLAVOR": "割据一方，掌控全局。",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得 1 层割据和 [R] 。"
+    ]
+  },
+  "Liuyanmod:Fantu": {
+    "NAME": "藩图",
+    "FLAVOR": "图穗所不能统者，皆入于此。",
+    "DESCRIPTIONS": [
+      "你每次获得 #y割据 时，摸 #b1 张牌。"
+    ]
+  }
+}

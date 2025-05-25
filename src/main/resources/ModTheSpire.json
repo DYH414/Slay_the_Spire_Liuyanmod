@@ -1,0 +1,11 @@
+{
+  "modid": "Three Country Kill Liuyan",
+  "name": "三国杀刘焉",
+  "author_list": ["Aount"],
+  "credits": "三国杀刘焉",
+  "description": "三国杀刘焉",
+  "version": "0.0.1",
+  "sts_version": "01-27-2020",
+  "mts_version": "3.23.2",
+  "dependencies": ["basemod", "stslib"]
+}

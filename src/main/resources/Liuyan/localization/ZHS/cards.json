@@ -1,0 +1,389 @@
+{
+  "Liuyanmod:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "Liuyanmod:Defend": {
+    "NAME": "格挡",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "ExampleMod:Wanjianqifa": {
+    "NAME": "万箭齐发",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 没有 格挡 的敌人受到双倍伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 没有 格挡 的敌人受到双倍伤害。"
+  },
+  "Liuyanmod:Nanmanruqin": {
+    "NAME": "南蛮入侵",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 意图不是攻击的敌人受到双倍伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 意图不是攻击的敌人受到双倍伤害。"
+  },
+  "Liuyanmod:Xunshidaifa": {
+    "NAME": "蓄势待发",
+    "DESCRIPTION": "抽 X 张牌，本回合 保留  X 张牌, NL 下回合获得 X 点 [R] 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "抽 X 张牌，本回合 保留  X+1 张牌， NL 下回合获得 X+1 点 [R] 。 NL  保留 。 "
+  },
+  "Liuyanmod:Tao": {
+    "NAME": "桃",
+    "DESCRIPTION": "获得 [R] 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [R]  [R] 。 NL  消耗 。"
+  },
+  "Liuyanmod:Jiu": {
+    "NAME": "酒",
+    "DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。"
+  },
+  "Liuyanmod:Limu": {
+    "NAME": "立牧",
+    "DESCRIPTION": "获得 [R]  [R] 。 NL 获得 liuyanmod:立牧 。 NL 获得 liuyanmod:割据 。",
+    "UPGRADE_DESCRIPTION": "获得 [R]  [R] 。 NL 获得 liuyanmod:立牧  。 NL 获得 liuyanmod:割据 。"
+  },
+  "Liuyanmod:Qinggangjian": {
+    "NAME": "青钢剑",
+    "DESCRIPTION": " 攻击无视敌人的 格挡 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 攻击无视敌人的 格挡 。"
+  },
+  "Liuyanmod:Qinglongyanyuedao": {
+    "NAME": "青龙偃月刀",
+    "DESCRIPTION": "每回合首次打出一张攻击牌后的手牌前 !M! 张攻击牌费用变为 0。",
+    "UPGRADE_DESCRIPTION": "固有。 NL 每回合首次打出一张攻击牌后的手牌前 !M! 张攻击牌费用变为 0。"
+  },
+  "Liuyanmod:Guohechaiqiao": {
+    "NAME": "过河拆桥",
+    "DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 "
+  },
+  "Liuyanmod:Shunshouqianyang": {
+    "NAME": "顺手牵羊",
+    "DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 "
+  },
+  "Liuyanmod:Zhangbashemao": {
+    "NAME": "丈八蛇矛",
+    "DESCRIPTION": " 回合开始时可以丢弃任意张牌，每丢弃两张攻击卡回复 [R] 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 回合开始时可以丢弃任意张牌，每丢弃两张卡回复 [R] 。"
+  },
+  "Liuyanmod:Zhoumuweiyi": {
+    "NAME": "州牧威仪",
+    "DESCRIPTION": "每打出 4 张技能牌，获得 [R] 和3点格挡。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每打出 4 张技能牌，获得 [R] 和3点格挡。"
+  },
+  "Liuyanmod:TusheYewang": {
+    "NAME": "野望",
+    "DESCRIPTION": " 预见  !M! 张牌。 NL 抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": " 预见  !M! 张牌。 NL 抽 1 张牌。"
+  },
+  "Liuyanmod:TusheBaozheng": {
+    "NAME": "暴政",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 手牌中每有一张攻击牌，伤害减少 2。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 手牌中每有一张攻击牌，伤害减少 2。"
+  },
+  "Liuyanmod:Wuzhongshengyou": {
+    "NAME": "无中生有",
+    "DESCRIPTION": "抽 !M! 张牌。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL  消耗 。"
+  },
+  "Liuyanmod:Beishui": {
+    "NAME": "背水",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出后手牌没有攻击卡，额外增加 10 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 打出后手牌没有攻击卡，额外增加10点伤害"
+  },
+
+  "Liuyanmod:Wangshizhinu": {
+    "NAME": "王室之怒",
+    "DESCRIPTION": "对所有敌人造成弃牌堆中攻击牌数量 × !M! 的伤害。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成弃牌堆中攻击牌数量 × !M! 的伤害。"
+  },
+  "Liuyanmod:Sha": {
+    "NAME": "杀",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 额外造成等同于目标 *杀 标记层数的伤害。 NL 目标获得 1 层 *杀 标记。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 额外造成等同于目标 *杀 标记层数的伤害。 NL 目标获得 1 层 *杀 标记。"
+  },
+  "Liuyanmod:Shan": {
+    "NAME": "闪",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 本场战斗每次使用 格挡 加3 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 本场战斗每次使用 格挡 加3 。"
+  },
+  "Liuyanmod:Tanlu": {
+    "NAME": "探路",
+    "DESCRIPTION": "抽 !M! 张卡，每抽到1张攻击卡获得 [R] 。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张卡，每抽到1张攻击卡获得 [R] 。"
+  },
+  "Liuyanmod:Quanmouzhuxin": {
+    "NAME": "权谋诛心",
+    "DESCRIPTION": "造成 !D! 点伤害。丢弃你手中的所有攻击牌，每丢弃一张攻击牌，额外造成 3 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。丢弃你手中的所有攻击牌，每丢弃一张攻击牌，额外造成 *5 点伤害。"
+  },
+  "Liuyanmod:Zhulu": {
+    "NAME": "逐鹿",
+    "DESCRIPTION": "造成 !D! 伤害。 NL 给予 !M! 层 易伤 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 NL 给予 !M! 层 易伤 。"
+  },
+  "Liuyanmod:Qingjunce": {
+    "NAME": "清君侧",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若手牌中无其他攻击牌，回复 [R]  [R] 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 若手牌中无其他攻击牌，回复 [R]  [R] 。"
+  },
+  "Liuyanmod:Wuxiekeji": {
+    "NAME": "无懈可击",
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 人工制品 。 消耗 。"
+  },
+  "Liuyanmod:Xuezhao": {
+    "NAME": "血诏",
+    "DESCRIPTION": "造成 !D! 点伤害。从弃牌堆中选择 !M! 张攻击牌加入手牌。 NL 加入的卡费用变为0。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。从弃牌堆中选择 !M! 张攻击牌加入手牌。 NL 加入的卡费用变为0。 NL  消耗 。"
+  },
+  "Liuyanmod:Baguazhen": {
+    "NAME": "八卦阵",
+    "DESCRIPTION": "获得1层 缓冲 。 NL 获得 liuyanmod:八卦 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 获得1层 缓冲 。 NL 获得 liuyanmod:八卦 。"
+  },
+  "Liuyanmod:Chitu": {
+    "NAME": "赤兔",
+    "DESCRIPTION": "每回合第一次打出攻击卡获得1 力量 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合第一次打出攻击卡获得1 力量 。"
+  },
+  "Liuyanmod:Dilu": {
+    "NAME": "的卢",
+    "DESCRIPTION": "每回合第一次打出技能牌时，获得1点 敏捷 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合第一次打出技能牌时，获得1点 敏捷 。"
+  },
+  "Liuyanmod:Renwangdun": {
+    "NAME": "仁王盾",
+    "DESCRIPTION": "受到的不大于 !M! 的伤害时无效。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 受到的不大于 !M! 的伤害时无效"
+  },
+  "Liuyanmod:Kongcheng": {
+    "NAME": "空城",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。"
+  },
+  "Liuyanmod:Shandian": {
+    "NAME": "闪电",
+    "DESCRIPTION": "抽一张牌。若为技能牌，对所有敌人造成 50  点伤害；否则，自己失去 10 点生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "抽一张牌。若为技能牌，对所有敌人造成 50  点伤害；否则，自己失去 10 点生命。 NL  消耗 。"
+  },
+  "Liuyanmod:Wugufengdeng": {
+    "NAME": "五谷丰登",
+    "DESCRIPTION": "抽场上敌人数量+1张牌。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "抽场上敌人 !M 倍数量+1张牌。 NL  消耗 。"
+  },
+  "Liuyanmod:Qibuchengshi": {
+    "NAME": "七步成诗",
+    "DESCRIPTION": " 虚无 。 NL 每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意 NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 。",
+    "UPGRADE_DESCRIPTION": "每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意  NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 。"
+  },
+  "Liuyanmod:Qilingong": {
+    "NAME": "麒麟弓",
+    "DESCRIPTION": "使用时获得 !M! 点 力量 。 NL 每使用一张能力牌，降低1点费用。 NL 使用攻击牌指定敌人时，使目标失去1点力量。",
+    "UPGRADE_DESCRIPTION": "使用时获得 !M! 点 力量 。 NL 每使用一张能力牌，降低1点费用。 NL 使用攻击牌指定敌人时，使目标失去1点力量。"
+  },
+  "Liuyanmod:Sangumaolu": {
+    "NAME": "三顾茅庐",
+    "DESCRIPTION": "把一张 liuyanmod:隆中对 加入牌堆。 NL 第三次使用时将一张 liuyanmod:卧龙出山 加入手卡",
+    "UPGRADE_DESCRIPTION": "把一张 *隆中对 加入牌堆。 NL 第三次使用时将一张 liuyanmod:卧龙出山 加入手卡"
+  },
+  "Liuyanmod:LongzhongDui": {
+    "NAME": "隆中对",
+    "DESCRIPTION": "抽到时获得 [R] 。 NL  虚无 。",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "Liuyanmod:WolongChushan": {
+    "NAME": "卧龙出山",
+    "DESCRIPTION": "对所有敌人造成 !D! 伤害 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。 "
+  },
+  "Liuyanmod:JinnangMiaoJi": {
+    "NAME": "锦囊妙计",
+    "DESCRIPTION": "选择一个效果：1）恢复15点生命（仅可使用一次）；2）升级牌组中所有卡（仅可使用一次）；3）获得5点力量（仅可使用一次）。",
+    "UPGRADE_DESCRIPTION": "费用变为0。 NL 选择一个效果：……"
+  },
+  "Liuyanmod:Gengshou": {
+    "NAME": "耕守",
+    "DESCRIPTION": "获得 !M! 金币。 NL 若拥有 立牧 ，额外获得10金币。 NL 获得 liuyanmod:立牧 。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "获得 !M! 金币。 NL 若拥有 立牧 ，额外获得10金币。 NL 获得 liuyanmod:立牧 。 消耗 。"
+  },
+  "Liuyanmod:Taoyuanjieyi": {
+    "NAME": "桃园结义",
+    "DESCRIPTION": "每有一个敌人，获得 [R] 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "每有一个敌人，获得 [R]  [R] 。 NL  消耗 。"
+  },
+  "Liuyanmod:Dandaofuhui": {
+    "NAME": "单刀赴会",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 本回合无法获得 格挡 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 本回合无法获得 格挡 。"
+  },
+  "Liuyanmod:Minggu": {
+    "NAME": "鸣鼓",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 手中每有一张牌，额外获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 手中每有一张牌，额外获得 !M! 点 格挡 。"
+  },
+  "Liuyanmod:ZhugeLiannu": {
+    "NAME": "诸葛连弩",
+    "DESCRIPTION": "每打出一张攻击牌，将一张 liuyanmod:杀 加入手牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每打出一张攻击牌，将一张 liuyanmod:杀 加入手牌。"
+  },
+  "Liuyanmod:WenjuzhanHuaxiong": {
+    "NAME": "温酒斩华雄",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你拥有 liuyanmod:酒意 ,伤害翻倍。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 若你拥有 liuyanmod:酒意 ,伤害翻倍。"
+  },
+  "Liuyanmod:Huogong": {
+    "NAME": "火攻",
+    "DESCRIPTION": "弃置 1 张牌。 NL 目标获得 !M! 层 liuyanmod:灼烧 。",
+    "UPGRADE_DESCRIPTION": "弃置 1 张牌。 NL 目标获得 !M! 层 liuyanmod:灼烧 。"
+  },
+  "Liuyanmod:ZhuqueYushan": {
+    "NAME": "朱雀羽扇",
+    "DESCRIPTION": "每次造成伤害对敌人给予 !M! 层 liuyanmod:灼烧 。",
+    "UPGRADE_DESCRIPTION": "每次造成伤害对敌人给予 !M! 层 liuyanmod:灼烧 。"
+  },
+  "Liuyanmod:Huoshaolianying": {
+    "NAME": "火烧联营",
+    "DESCRIPTION": "给予敌人 !M! 层 liuyanmod:灼烧 。 NL 所有敌人获得与目标相同的 liuyanmod:灼烧 层数。",
+    "UPGRADE_DESCRIPTION": "给予敌人 !M! 层 liuyanmod:灼烧 。 NL 所有敌人获得与目标相同的 liuyanmod:灼烧 层数。"
+  },
+  "Liuyanmod:Wuku": {
+    "NAME": "武库",
+    "DESCRIPTION": "将 1 张随机 liuyanmod:装备 牌加入你的手牌，本回合费用为 0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将 1 张随机 liuyanmod:装备 牌加入你的手牌，该牌本回合费用为 0。 NL 消耗 。"
+  },
+  "Liuyanmod:Tengjia": {
+    "NAME": "藤甲",
+    "DESCRIPTION": "每次受到攻击时，敌人获得 !M! 层 liuyanmod:灼烧 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每次受到攻击时，敌人获得 !M! 层 liuyanmod:灼烧 。"
+  },
+  "Liuyanmod:TiesuoLianhuan": {
+    "NAME": "铁索连环",
+    "DESCRIPTION": "对所有敌人施加 liuyanmod:连环 。 消耗 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人施加 liuyanmod:连环 。 消耗 。"
+  },
+  "Liuyanmod:Gushou": {
+    "NAME": "固守",
+    "DESCRIPTION": "获得 !B! 点 格挡 。如果你拥有 liuyanmod:立牧 ，额外获得 8 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。如果你拥有 liuyanmod:立牧 ，额外获得 11 点 格挡 。"
+  },
+  "Liuyanmod:Longqian": {
+    "NAME": "龙潜",
+    "DESCRIPTION": "若本回合没有使用攻击牌，下回合获得 [R] 。 NL 若没有使用技能牌，下回合抽 1 张牌。 NL 若拥有 liuyanmod:立牧 ，每项效果额外 +1 。",
+    "UPGRADE_DESCRIPTION": "若本回合没有使用攻击牌，下回合获得 [R] 。NL 若没有使用技能牌，下回合抽 1 张牌。 NL 若拥有 liuyanmod:立牧 ，每项效果额外 +1 。"
+  },
+  "Liuyanmod:Huosha": {
+    "NAME": "火杀",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予目标 !M! 层 liuyanmod:灼烧 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予目标 !M! 层 liuyanmod:灼烧 。"
+  },
+  "Liuyanmod:Chengshengzhuiji": {
+    "NAME": "乘胜追击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果拥有2层以上 liuyanmod:割据 ，此卡返回手牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果拥有 2层以上 liuyanmod:割据 ，此卡返回手牌。"
+  },
+  "Liuyanmod:YushiWeifang": {
+    "NAME": "御势为防",
+    "DESCRIPTION": "每有 1 层 liuyanmod:割据 ，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "每有 1 层 liuyanmod:割据 ，获得 !M! 点 格挡 。"
+  },
+  "Liuyanmod:GejuQiangxi": {
+    "NAME": "割据强袭",
+    "DESCRIPTION": "获得1层 liuyanmod:割据 。 NL 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "获得1层 liuyanmod:割据 。 NL 造成 !D! 点伤害。"
+  },
+  "Liuyanmod:ShiruPozhu": {
+    "NAME": "势如破竹",
+    "DESCRIPTION": "获得 X层 liuyanmod:割据 。 NL 获得 2X 能量，抽 X 张牌。 NL  消耗 。 ",
+    "UPGRADE_DESCRIPTION": "获得 X-1层 liuyanmod:割据 。 NL 2X 能量，抽 X 张牌。 NL  消耗 。"
+  },
+  "Liuyanmod:Jushi": {
+    "NAME": "聚势",
+    "DESCRIPTION": "获得1层 liuyanmod:割据 。 NL 对所有敌人造成 !D! 伤害 X次 。 NL （X=当前割据层数）。",
+    "UPGRADE_DESCRIPTION": "获得1层 liuyanmod:割据 。 NL 对所有敌人造成 !D! 伤害 X次 。 NL （X=当前割据层数）。"
+  },
+  "Liuyanmod:ZhuzhouFenluan": {
+    "NAME": "诸洲纷乱",
+    "DESCRIPTION": "liuyanmod:割据 层数翻倍 ，当前能量翻倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "liuyanmod:割据 层数翻倍， 当前能量翻倍。 消耗 。"
+  },
+  "Liuyanmod:QunxiongGeju": {
+    "NAME": "群雄割据",
+    "DESCRIPTION": "若拥有2层以上的 liuyanmod:割据 ， NL 每打出一张攻击牌，回复 liuyanmod:割据 层数的能量。",
+    "UPGRADE_DESCRIPTION": "若拥有2层以上的 liuyanmod:割据 ， NL 每打出一张攻击牌，回复 liuyanmod:割据 层数的能量。"
+  },
+  "Liuyanmod:LongYin": {
+    "NAME": "龙吟",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若拥有 liuyanmod:割据 ，获得 !M! 格挡  。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 若拥有 liuyanmod:割据 ，获得 !M! 格挡 。"
+  },
+  "Liuyanmod:PofuChenzhou": {
+    "NAME": "破釜沉舟",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 额外增加 liuyanmod:割据 层数 × !M! 的伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 额外增加 liuyanmod:割据 层数 × !M! 的伤害。"
+  },
+  "Liuyanmod:DieLang": {
+    "NAME": "叠浪",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合每使用一次此卡，伤害增加 !M! 点。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 本回合每使用一次此卡，伤害增加 !M! 点。"
+  },
+  "Liuyanmod:LeBuSiShu": {
+  "NAME": "乐不思蜀",
+  "DESCRIPTION": "给予敌人 liuyanmod:乐不思蜀 。 NL 消耗 。",
+  "UPGRADE_DESCRIPTION": " 给予敌人 liuyanmod:乐不思蜀 。 NL  消耗 。"
+},
+  "Liuyanmod:ZhuLuTianXia": {
+    "NAME": "逐鹿天下",
+    "DESCRIPTION": "每打出一张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。",
+    "UPGRADE_DESCRIPTION": "每打出一张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。"
+  },
+  "Liuyanmod:PoJun": {
+    "NAME": "破军",
+    "DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL 获得 liuyanmod:立牧 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL 获得 liuyanmod:立牧 。 NL  消耗 。"
+  },
+  "Liuyanmod:YinRan": {
+    "NAME": "引燃",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
+  },
+  "Liuyanmod:GuShouYiFang": {
+    "NAME": "固守一方",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 1 层 liuyanmod:割据 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 1 层 liuyanmod:割据 。"
+  },
+
+  "Liuyanmod:LimuMouding": {
+    "NAME": "谋定",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 若你有 liuyanmod:立牧  ，获得 [R] 并 预见  !M! 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 若你有 liuyanmod:立牧  ，获得 [R] 并 预见  !M! 。 "
+  },
+
+  "Liuyanmod:Chouliang": {
+    "NAME": "筹粮",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 若你有 liuyanmod:立牧 ，你的下一张卡不消耗能量。 NL 获得 liuyanmod:立牧 。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 若你有 liuyanmod:立牧 ，你的下一张卡不消耗能量。 NL 获得 liuyanmod:立牧 。"
+  },
+  "Liuyanmod:YuboJiaofeng": {
+    "NAME": "玉帛交锋",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL  保留 一张手牌直到下回合。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL  保留 一张手牌直到下回合 。"
+  },
+  "Liuyanmod:GuzhenDaidi": {
+    "NAME": "固阵待敌",
+    "DESCRIPTION": "若回合未使用攻击牌，回合结束时获得 !M! 点格挡。"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

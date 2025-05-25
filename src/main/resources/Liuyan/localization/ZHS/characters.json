@@ -1,0 +1,11 @@
+{
+  "ExampleMod:MyCharacter": {
+    "NAMES": [
+      "自定义人物"
+    ],
+    "TEXT": [
+      "我是你大爷",
+      "“你就是心脏？”"
+    ]
+  }
+}
