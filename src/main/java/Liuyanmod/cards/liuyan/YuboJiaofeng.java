@@ -2,11 +2,9 @@ package Liuyanmod.cards.liuyan;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -20,32 +18,33 @@ public class YuboJiaofeng extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG = "Liuyan/img/cards/Yubojiaofeng_attack.png";
+    public static final String IMG = "Liuyan/img/cards/Yubojiaofeng_attack.png"; // 改为技能卡图片
 
     private static final int COST = 1;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL; // 改为技能卡
     private static final CardColor COLOR = EXAMPLE_GREEN;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final CardTarget TARGET = CardTarget.SELF; // 改为自我目标
+    private static final int BLOCK = 7; // 格挡值
+    private static final int UPGRADE_PLUS_BLOCK = 3; // 升级增加格挡
+    private static final int RETAIN_AMOUNT = 1; // 保留卡牌数量
+    private static final int UPGRADE_PLUS_RETAIN = 1; // 升级增加保留数量
 
     public YuboJiaofeng() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = DAMAGE;
+        this.baseBlock = BLOCK;
+        this.magicNumber = this.baseMagicNumber = RETAIN_AMOUNT;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // 造成伤害
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        System.out.println("YuboJiaofeng dealt " + this.damage + " damage to " + (m != null ? m.name : "null"));
-
+        // 获得格挡
+        this.addToBot(new GainBlockAction(p, p, this.block));
+        System.out.println("YuboJiaofeng gained " + this.block + " block");
 
         // 选择保留手牌
         if (!p.hand.isEmpty()) {
-            this.addToBot(new SelectCardToRetainAction(1));
+            this.addToBot(new SelectCardToRetainAction(this.magicNumber));
         } else {
             System.out.println("YuboJiaofeng: No cards in hand to retain");
         }
@@ -79,7 +78,8 @@ public class YuboJiaofeng extends CustomCard {
                     validCards.addToTop(c);
                 }
 
-                AbstractDungeon.gridSelectScreen.open(validCards, this.amount, "选择一张手牌保留至下回合", false, false, false, false);
+                String message = this.amount == 1 ? "选择一张手牌保留至下回合" : "选择 " + this.amount + " 张手牌保留至下回合";
+                AbstractDungeon.gridSelectScreen.open(validCards, this.amount, message, false, false, false, false);
             } else {
                 for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                     c.retain = true;
@@ -98,7 +98,8 @@ public class YuboJiaofeng extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeBlock(UPGRADE_PLUS_BLOCK);
+            this.upgradeMagicNumber(UPGRADE_PLUS_RETAIN);
             this.initializeDescription();
         }
     }

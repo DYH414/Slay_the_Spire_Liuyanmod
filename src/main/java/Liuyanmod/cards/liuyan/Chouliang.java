@@ -39,16 +39,8 @@ public class Chouliang extends CustomCard {
         this.addToBot(new DrawCardAction(p, this.magicNumber));
         System.out.println("Chouliang used, drew " + this.magicNumber + " cards");
 
-        // 检查立牧效果
-        if (p.hasPower("Liuyanmod:LimuPower")) {
-
-            // 下一张卡费用为 0
-            this.addToBot(new ApplyPowerAction(p, p, new Liuyanmod.powers.ChouliangPower(p, 1), 1));
-            System.out.println("Chouliang triggered Limu effect: gained 1 energy, next card cost 0");
-        }
-
         // 施加立牧
-        this.addToBot(new ApplyPowerAction(p, p, new Liuyanmod.powers.LimuPower(p), 1));
+        this.addToBot(new ApplyPowerAction(p, p, new Liuyanmod.powers.GejuPower(p,1), 1));
         System.out.println("Chouliang applied 1 layer of LimuPower");
     }
 

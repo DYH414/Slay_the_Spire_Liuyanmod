@@ -359,13 +359,13 @@
 
   "Liuyanmod:Chouliang": {
     "NAME": "筹粮",
-    "DESCRIPTION": "抽 !M! 张牌。 NL 若你有 liuyanmod:立牧 ，你的下一张卡不消耗能量。 NL 获得 liuyanmod:立牧 。",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 若你有 liuyanmod:立牧 ，你的下一张卡不消耗能量。 NL 获得 liuyanmod:立牧 。"
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 liuyanmod:割据 。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 获得 liuyanmod:割据 。"
   },
   "Liuyanmod:YuboJiaofeng": {
     "NAME": "玉帛交锋",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL  保留 一张手牌直到下回合。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL  保留 一张手牌直到下回合 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 保留 !M! 张手牌直到下回合。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 保留 !M! 张手牌直到下回合。"
   },
   "Liuyanmod:GuzhenDaidi": {
     "NAME": "固阵待敌",
