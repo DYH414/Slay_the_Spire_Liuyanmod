@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import Liuyanmod.powers.ZhuoshaoPower;
 
 import static Liuyanmod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.sound;
 
 public class Huoshaolianying extends CustomCard {
     public static final String ID = "Liuyanmod:Huoshaolianying";
@@ -36,6 +37,7 @@ public class Huoshaolianying extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        CardCrawlGame.sound.play("HUOSHAOLIANYING");
         if (m == null || m.isDeadOrEscaped()) return;
 
         // Step 1: 给目标施加基础灼烧

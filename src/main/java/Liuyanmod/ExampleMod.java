@@ -74,6 +74,8 @@ public class ExampleMod implements  AddAudioSubscriber, EditKeywordsSubscriber,E
         BaseMod.addAudio("Wuxiekeji", "Liuyan/sounds/Wuxiekeji.ogg");
         BaseMod.addAudio("MOUDING", "Liuyan/sounds/SKILL_402_guanxing_2.ogg");
         BaseMod.addAudio("ZHUOSHAO", "Liuyan/sounds/Zhuoshao.ogg");
+        BaseMod.addAudio("ZHIHENG", "Liuyan/sounds/SKILL_802_zhiheng_2.ogg");
+        BaseMod.addAudio("HUOSHAOLIANYING", "Liuyan/sounds/SKILL_1406_lianying_1.ogg");
 
     }
     // 当basemod开始注册mod卡牌时，便会调用这个函数
