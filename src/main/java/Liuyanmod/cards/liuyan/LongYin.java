@@ -23,7 +23,7 @@ public class LongYin extends CustomCard {
     private static final String IMG = "Liuyan/img/cards/Longyin_attack.png";
 
     private static final int COST = 2;
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 14;
     private static final int UPGRADE_DAMAGE = 4;
     private static final int BLOCK_GAIN = 10;
 

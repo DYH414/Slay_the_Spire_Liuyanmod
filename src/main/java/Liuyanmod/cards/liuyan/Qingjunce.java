@@ -25,7 +25,7 @@ public class Qingjunce extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 14;
     private static final int UPGRADE_PLUS_DAMAGE = 4;
     private static final int ENERGY_GAIN = 2;
 

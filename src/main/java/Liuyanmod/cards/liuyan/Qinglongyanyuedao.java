@@ -21,7 +21,7 @@ public class Qinglongyanyuedao extends CustomCard {
     private static final int MAGIC = 1;
 
     public Qinglongyanyuedao() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, EXAMPLE_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, EXAMPLE_GREEN, CardRarity.RARE, CardTarget.SELF);
         this.baseMagicNumber = this.magicNumber = MAGIC;
     }
 
