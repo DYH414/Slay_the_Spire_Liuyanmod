@@ -153,6 +153,8 @@ public class ExampleMod implements  AddAudioSubscriber, EditKeywordsSubscriber,E
         BaseMod.addCard(new Chouliang());
         BaseMod.addCard(new YuboJiaofeng());
         BaseMod.addCard(new GuzhenDaidi());
+        BaseMod.addCard(new Zhiheng());
+        BaseMod.addCard(new HuoshaoChibi());
     }
 
     @Override

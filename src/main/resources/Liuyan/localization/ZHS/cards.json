@@ -370,6 +370,16 @@
   "Liuyanmod:GuzhenDaidi": {
     "NAME": "固阵待敌",
     "DESCRIPTION": "若回合未使用攻击牌，回合结束时获得 !M! 点格挡。"
+  },
+  "Liuyanmod:HuoshaoChibi": {
+    "NAME": "火烧赤壁",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 给予 !M! 层 liuyanmod:灼烧 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 给予 !M! 层 liuyanmod:灼烧 。"
+  },
+  "Liuyanmod:Zhiheng": {
+    "NAME": "制衡",
+    "DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量的牌。",
+    "UPGRADE_DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量+1张牌。"
   }
 }
 

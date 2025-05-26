@@ -2,8 +2,6 @@ package Liuyanmod.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Fantu extends CustomRelic {
@@ -12,7 +10,7 @@ public class Fantu extends CustomRelic {
     private static final Texture OUTLINE = new Texture("Liuyan/img/relics/Fantu.png");
 
     public Fantu() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     @Override

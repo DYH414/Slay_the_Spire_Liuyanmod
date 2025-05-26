@@ -15,7 +15,7 @@ public class Zhangbashemao extends CustomCard {
     public static final String ID = "Liuyanmod:Zhangbashemao";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String IMG_PATH = "Liuyan/img/cards/Zhangbashemao.jpg";
-    private static final int COST = 3;
+    private static final int COST = 2;
 
     public Zhangbashemao() {
         super(ID, CARD_STRINGS.NAME, IMG_PATH, COST,
@@ -32,7 +32,7 @@ public class Zhangbashemao extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(2);
+            this.upgradeBaseCost(1);
             this.isInnate = true;
             rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();

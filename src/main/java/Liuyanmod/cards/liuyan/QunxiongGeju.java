@@ -25,7 +25,7 @@ public class QunxiongGeju extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION,
                 CardType.POWER,
                 EXAMPLE_GREEN,
-                CardRarity.RARE,
+                CardRarity.UNCOMMON,
                 CardTarget.SELF);
     }
 
