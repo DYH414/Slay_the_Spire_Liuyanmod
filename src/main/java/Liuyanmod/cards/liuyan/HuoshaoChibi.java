@@ -26,10 +26,10 @@ public class HuoshaoChibi extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_PLUS_DAMAGE = 4;
-    private static final int BURNING = 2;
-    private static final int UPGRADE_PLUS_BURNING = 1;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DAMAGE = 2;
+    private static final int BURNING = 4;
+    private static final int UPGRADE_PLUS_BURNING = 2;
 
     public HuoshaoChibi() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, EXAMPLE_GREEN, RARITY, TARGET);
