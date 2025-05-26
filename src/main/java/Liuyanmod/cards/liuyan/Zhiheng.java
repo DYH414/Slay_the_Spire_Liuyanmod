@@ -38,7 +38,6 @@ public class Zhiheng extends CustomCard {
         sound.play("ZHIHENG");
         int handSize = p.hand.group.size();
         if (handSize > 0) {
-            // 使用自定义的选择弃牌Action
             addToBot(new ChooseDiscardAction(handSize, this.magicNumber));
         }
     }

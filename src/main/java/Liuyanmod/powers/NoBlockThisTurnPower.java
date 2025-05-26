@@ -21,9 +21,13 @@ public class NoBlockThisTurnPower extends AbstractPower {
     }
 
     @Override
-    public void onGainedBlock(float blockAmount) {
-        flash();
-        owner.loseBlock((int) blockAmount); // 直接失去新获得的格挡
+    public float modifyBlock(float blockAmount) {
+        // 直接将所有格挡修改为0
+        if (blockAmount > 0) {
+            flash();
+            return 0.0f;
+        }
+        return blockAmount;
     }
 
     @Override

@@ -15,25 +15,33 @@ public class ChooseDiscardAction extends AbstractGameAction {
         this.maxDiscard = maxDiscard;
         this.bonusDrawAmount = bonusDrawAmount;
         this.duration = Settings.ACTION_DUR_FAST;
+        this.actionType = ActionType.DISCARD;
     }
 
     @Override
     public void update() {
         // 第一步：打开选择界面
         if (!this.screenOpened) {
+            if (this.maxDiscard <= 0) {
+                this.isDone = true;
+                return;
+            }
             AbstractDungeon.handCardSelectScreen.open(
                     "选择要弃置的牌",
                     this.maxDiscard,
-                    true, // 可以选择0张
-                    false
+                    true,  // 允许选择 0 到 maxDiscard 张牌
+                    true,  // 允许选择 0 张牌
+                    false,
+                    false,
+                    true   // 允许选择 0 到 maxDiscard 的任意数量
             );
             this.screenOpened = true;
             this.tickDuration();
             return;
         }
 
-        // 第二步：等待选择完成并处理结果
-        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
+        // 第二步：检查选择是否完成
+        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) { // 改为检查是否仍在选择
             // 获取选择的牌数量
             int discardedAmount = AbstractDungeon.handCardSelectScreen.selectedCards.group.size();
 
@@ -46,14 +54,17 @@ public class ChooseDiscardAction extends AbstractGameAction {
             }
 
             // 摸牌
-            if (discardedAmount + this.bonusDrawAmount > 0) {
-                addToBot(new DrawCardAction(AbstractDungeon.player, discardedAmount + this.bonusDrawAmount));
+            int drawAmount = discardedAmount + this.bonusDrawAmount;
+            if (drawAmount > 0) {
+                addToBot(new DrawCardAction(AbstractDungeon.player, drawAmount)); // 使用 addToBot
             }
 
-            // 标记已处理并清理
+            // 清理并结束
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
             AbstractDungeon.handCardSelectScreen.selectedCards.clear();
             this.isDone = true;
+        } else {
+            this.tickDuration();
         }
     }
 }
