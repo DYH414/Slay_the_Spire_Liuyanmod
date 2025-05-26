@@ -16,7 +16,7 @@ public class Jiu extends CustomCard {
     public static final String ID = "Liuyanmod:Jiu";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "img/cards/Jiu.png";
+    private static final String IMG_PATH = "Liuyan/img/cards/Jiu.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;

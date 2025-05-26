@@ -25,7 +25,7 @@ public class Xuezhao extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    private static final int DAMAGE = 20;
+    private static final int DAMAGE = 16;
     private static final int MAGIC = 1;
     private static final int UPGRADE_PLUS_MAGIC = 1;
 

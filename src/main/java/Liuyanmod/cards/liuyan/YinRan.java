@@ -25,7 +25,7 @@ public class YinRan extends CustomCard {
 
     private static final int BASE_DAMAGE = 1; // 每次伤害
     private static final int BASE_HITS = 5; // 基础攻击次数
-    private static final int UPGRADE_HITS = 9; // 升级后攻击次数
+    private static final int UPGRADE_HITS = 8; // 升级后攻击次数
 
     public YinRan() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
