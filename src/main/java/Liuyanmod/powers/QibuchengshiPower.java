@@ -43,24 +43,31 @@ public class QibuchengshiPower extends AbstractPower {
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         switch (step) {
             case 0:
+                CardCrawlGame.sound.play("JIUSHI_1");
                 this.addToBot(new DrawCardAction(this.owner, 1));
                 break;
             case 1:
+                CardCrawlGame.sound.play("JIUSHI_2");
                 this.addToBot(new GainBlockAction(this.owner, this.owner, 4));
                 this.addToBot(new ApplyPowerAction(this.owner, this.owner, new JiuPower(this.owner)));
                 break;
             case 2:
+                CardCrawlGame.sound.play("JIUSHI_3");
                 break;
             case 3:
+                CardCrawlGame.sound.play("JIUSHI_4");
                 this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, 1)));
                 break;
             case 4:
+                CardCrawlGame.sound.play("JIUSHI_5");
                 this.addToBot(new GainEnergyAction(1));
                 break;
             case 5:
+                CardCrawlGame.sound.play("JIUSHI_6");
                 this.addToBot(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(15, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.LIGHTNING));
                 break;
             case 6:
+                CardCrawlGame.sound.play("JIUSHI_7");
                 this.addToBot(new ApplyPowerAction(this.owner, this.owner, new IntangiblePlayerPower(this.owner, 1)));
                 break;
         }

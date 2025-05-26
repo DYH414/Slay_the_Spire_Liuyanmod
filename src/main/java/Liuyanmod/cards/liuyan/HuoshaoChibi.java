@@ -41,7 +41,11 @@ public class HuoshaoChibi extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
-        addToBot(new ApplyPowerAction(p, p, new ZhuoshaoPower(p, this.magicNumber), this.magicNumber));
+        for (AbstractMonster mo : com.megacrit.cardcrawl.dungeons.AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!mo.isDeadOrEscaped()) {
+                addToBot(new ApplyPowerAction(mo, p, new ZhuoshaoPower(mo, this.magicNumber), this.magicNumber));
+            }
+        }
     }
 
     @Override
