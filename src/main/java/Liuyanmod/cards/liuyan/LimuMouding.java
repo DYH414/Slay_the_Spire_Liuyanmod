@@ -44,14 +44,10 @@ public class LimuMouding extends CustomCard {
         this.addToBot(new GainBlockAction(p, p, this.block));
         System.out.println("LimuMouding used, gained " + this.block + " block");
 
-        // 检查立牧效果
-        if (p.hasPower("Liuyanmod:LimuPower")) {
-            // 获得能量
-            this.addToBot(new GainEnergyAction(1));
-            // 预见
+
             this.addToBot(new ScryAction(this.magicNumber));
             System.out.println("LimuMouding triggered Limu effect: +1 energy, scry " + this.magicNumber);
-        }
+
 
 
     }

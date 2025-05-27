@@ -32,7 +32,7 @@ public class PoJun extends CustomCard {
     private static final int STRENGTH_GAIN = 3; // 力量增益
 
     public PoJun() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = BASE_VULNERABLE; // 易伤层数
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true; // 消耗
@@ -59,12 +59,7 @@ public class PoJun extends CustomCard {
             this.addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, this.magicNumber), this.magicNumber));
 
 
-        // 获得“立牧”能力
-        this.addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new LimuPower(p)
-        ));
+
     }
 
     @Override

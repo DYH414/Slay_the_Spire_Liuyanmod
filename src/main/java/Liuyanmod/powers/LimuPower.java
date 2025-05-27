@@ -17,7 +17,7 @@ public class LimuPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
-        this.type = PowerType.BUFF;
+        this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
         this.loadRegion("blur"); // 或者你可以使用自定义贴图
         this.updateDescription();
@@ -26,8 +26,8 @@ public class LimuPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         this.flash();
-        this.addToBot(new ApplyPowerAction(owner, owner, new EntanglePower(owner)));
         this.addToBot(new com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction(owner, owner, this.ID));
+        this.addToBot(new ApplyPowerAction(owner, owner, new EntanglePower(owner)));
     }
 
     @Override

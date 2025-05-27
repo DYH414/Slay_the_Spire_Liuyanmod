@@ -102,8 +102,8 @@
   },
   "Liuyanmod:Shan": {
     "NAME": "闪",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 本场战斗每次使用 格挡 加3 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 本场战斗每次使用 格挡 加3 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 本场战斗每次使用 格挡 加2",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 本场战斗每次使用 格挡 加2 。"
   },
   "Liuyanmod:Tanlu": {
     "NAME": "探路",
@@ -337,8 +337,8 @@
   },
   "Liuyanmod:PoJun": {
     "NAME": "破军",
-    "DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL 获得 liuyanmod:立牧 。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL 获得 liuyanmod:立牧 。 NL  消耗 。"
+    "DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "所有敌人获得 !M! 层 易伤 。 NL 获得 !M! 点 临时 力量 。 NL  消耗 。"
   },
   "Liuyanmod:YinRan": {
     "NAME": "引燃",

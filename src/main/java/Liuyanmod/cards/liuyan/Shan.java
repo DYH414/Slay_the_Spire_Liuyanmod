@@ -32,7 +32,7 @@ public class Shan extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
-        this.baseBlock += 3; // 每次使用后格挡值增加 3
+        this.baseBlock += 2; // 每次使用后格挡值增加 3
         this.applyPowers();
     }
 
