@@ -28,8 +28,8 @@ public class QilingongPower extends AbstractPower {
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
         this.priority = 50; // 优先级高一点，确保先削减力量
-        String path128 = "Liuyan/img/powers/BaguazhenPowerPower84.jpg";
-        String path48 = "Liuyan/img/powers/BaguazhenPowerPower32.jpg";
+        String path128 = "Liuyan/img/powers/QilingongPower84.png";
+        String path48 = "Liuyan/img/powers/QilingongPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         updateDescription();

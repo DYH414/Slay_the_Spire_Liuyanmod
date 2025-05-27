@@ -1,6 +1,8 @@
 package Liuyanmod.powers;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -16,7 +18,10 @@ public class NoBlockThisTurnPower extends AbstractPower {
         this.amount = -1;
         this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
-        this.loadRegion("barricade"); // 或者自定义贴图
+        String path128 = "Liuyan/img/powers/NoblockPower84.png";
+        String path48 = "Liuyan/img/powers/NoblockPower32.png";
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         this.updateDescription();
     }
 

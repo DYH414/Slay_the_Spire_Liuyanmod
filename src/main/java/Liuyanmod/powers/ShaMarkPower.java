@@ -1,7 +1,9 @@
 package Liuyanmod.powers;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -18,7 +20,10 @@ public class ShaMarkPower extends AbstractPower {
         this.amount = amount;
         this.type = PowerType.DEBUFF;
         this.isTurnBased = false; // 改为非回合制
-        this.loadRegion("vulnerable");
+        String path128 = "Liuyan/img/powers/ShaPower84.png";
+        String path48 = "Liuyan/img/powers/ShaPower32.png";
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         updateDescription();
     }
 

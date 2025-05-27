@@ -1,9 +1,11 @@
 package Liuyanmod.powers;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -27,7 +29,10 @@ public class TiesuoPower extends AbstractPower {
         this.owner = owner;
         this.type = PowerType.DEBUFF;
         this.isTurnBased = false;
-        this.loadRegion("flameBarrier"); // 使用已有贴图
+        String path128 = "Liuyan/img/powers/TiesuolianhuanPower84.png";
+        String path48 = "Liuyan/img/powers/TiesuolianhuanPower32.png";
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         updateDescription();
     }
 

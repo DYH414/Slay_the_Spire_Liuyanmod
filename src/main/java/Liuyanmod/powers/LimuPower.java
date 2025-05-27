@@ -1,8 +1,10 @@
 // Liuyanmod.powers.NextTurnEntanglePower.java
 package Liuyanmod.powers;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.EntanglePower;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -19,7 +21,10 @@ public class LimuPower extends AbstractPower {
         this.amount = -1;
         this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
-        this.loadRegion("blur"); // 或者你可以使用自定义贴图
+        String path128 = "Liuyan/img/powers/LimuPower84.png";
+        String path48 = "Liuyan/img/powers/LimuPower32.png";
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         this.updateDescription();
     }
 
