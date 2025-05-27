@@ -1,6 +1,5 @@
 package Liuyanmod.cards.liuyan;
 
-import Liuyanmod.actions.ApplyZhuoshaoAction;
 import Liuyanmod.powers.ZhuoshaoPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -44,7 +43,7 @@ public class HuoshaoChibi extends CustomCard {
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
         for (AbstractMonster mo : com.megacrit.cardcrawl.dungeons.AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
-                this.addToBot(new ApplyZhuoshaoAction(m, p, this.magicNumber));
+                addToBot(new ApplyPowerAction(mo, p, new ZhuoshaoPower(mo, this.magicNumber), this.magicNumber));
             }
         }
     }

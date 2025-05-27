@@ -1,6 +1,5 @@
 package Liuyanmod.cards.liuyan;
 
-import Liuyanmod.actions.ApplyZhuoshaoAction;
 import Liuyanmod.powers.ZhuoshaoPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -43,7 +42,8 @@ public class Huosha extends CustomCard {
         addToBot(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        this.addToBot(new ApplyZhuoshaoAction(m, p, this.magicNumber));
+        addToBot(new ApplyPowerAction(m, p,
+                new ZhuoshaoPower(m, this.magicNumber), this.magicNumber));
     }
 
     @Override
