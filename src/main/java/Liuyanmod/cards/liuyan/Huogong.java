@@ -1,5 +1,6 @@
 package Liuyanmod.cards.liuyan;
 
+import Liuyanmod.actions.ApplyZhuoshaoAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -36,8 +37,7 @@ public class Huogong extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardCrawlGame.sound.play("ZHUOSHAO");
         this.addToBot(new DiscardAction(p, p, 1, false));
-        this.addToBot(new ApplyPowerAction(m, p,
-                new ZhuoshaoPower(m, BURN), BURN));
+        this.addToBot(new ApplyZhuoshaoAction(m, p, this.magicNumber));
     }
 
     @Override

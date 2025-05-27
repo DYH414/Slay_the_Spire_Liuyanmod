@@ -2,7 +2,6 @@ package Liuyanmod.cards.liuyan;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -11,9 +10,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import Liuyanmod.powers.ZhuoshaoPower;
+import Liuyanmod.actions.ApplyZhuoshaoAction;
 
 import static Liuyanmod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
-import static com.megacrit.cardcrawl.core.CardCrawlGame.sound;
 
 public class Huoshaolianying extends CustomCard {
     public static final String ID = "Liuyanmod:Huoshaolianying";
@@ -40,8 +39,8 @@ public class Huoshaolianying extends CustomCard {
         CardCrawlGame.sound.play("HUOSHAOLIANYING");
         if (m == null || m.isDeadOrEscaped()) return;
 
-        // Step 1: 给目标施加基础灼烧
-        this.addToBot(new ApplyPowerAction(m, p, new ZhuoshaoPower(m, this.magicNumber), this.magicNumber));
+        // Step 1: 给目标施加基础灼烧（支持借东风倍数）
+        this.addToBot(new ApplyZhuoshaoAction(m, p, this.magicNumber));
 
         // Step 2: 在所有动作完成后同步层数
         this.addToBot(new AbstractGameAction() {
@@ -52,7 +51,9 @@ public class Huoshaolianying extends CustomCard {
 
                     for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
                         if (!mo.isDeadOrEscaped() && mo != m) { // 排除原始目标
-                            addToTop(new ApplyPowerAction(mo, p,
+                            // 这里使用原始的ApplyPowerAction，因为我们想要同步确切的层数
+                            // 而不是再次应用借东风的倍数效果
+                            addToTop(new com.megacrit.cardcrawl.actions.common.ApplyPowerAction(mo, p,
                                     new ZhuoshaoPower(mo, burnAmount), burnAmount));
                         }
                     }
@@ -61,7 +62,6 @@ public class Huoshaolianying extends CustomCard {
             }
         });
     }
-
 
     @Override
     public void upgrade() {

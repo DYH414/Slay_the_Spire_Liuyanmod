@@ -31,6 +31,7 @@ public class TiesuoLianhuan extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        CardCrawlGame.sound.play("TIESUOLIANHUAN");
         for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
             if (!mo.isDeadOrEscaped()) {
                 addToBot(new ApplyPowerAction(mo, p, new TiesuoPower(mo)));

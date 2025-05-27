@@ -31,6 +31,7 @@ public class Zhiheng extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, EXAMPLE_GREEN, RARITY, TARGET);
         this.baseMagicNumber = DRAW_BASE;
         this.magicNumber = DRAW_BASE;
+        this.exhaust = true;
     }
 
     @Override

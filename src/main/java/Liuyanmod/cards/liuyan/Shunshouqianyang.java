@@ -62,6 +62,12 @@ public class Shunshouqianyang extends CustomCard {
                             addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, power.amount), power.amount));
                             stole = true;
                             break;
+                        case "Intangible":
+                            addToBot(new RemoveSpecificPowerAction(m, p, "Intangible"));
+                            addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, power.amount), power.amount));
+                            stole = true;
+                            break;
+                            
                         default:
                             continue; // 不是能偷的，继续找
                     }

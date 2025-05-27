@@ -378,8 +378,14 @@
   },
   "Liuyanmod:Zhiheng": {
     "NAME": "制衡",
-    "DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量的牌。",
-    "UPGRADE_DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量+1张牌。"
+    "DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量的牌。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "弃置 任意 张牌，然后摸弃置数量+1张牌。 NL  消耗 。"
+  },
+  "Liuyanmod:Jiedongfeng": {
+    "NAME": "借东风",
+    "DESCRIPTION": "给予敌人的 liuyanmod:灼烧 层数变成 !M! 倍。",
+    "UPGRADE_DESCRIPTION": "给予敌人的 liuyanmod:灼烧 层数变成 !M! 倍。"
+
   }
 }
 
