@@ -31,8 +31,8 @@
   },
   "Liuyanmod:Jiu": {
     "NAME": "酒",
-    "DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。"
+    "DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 liuyanmod:酒意 。 NL  消耗 。"
   },
   "Liuyanmod:Limu": {
     "NAME": "立牧",
@@ -61,7 +61,7 @@
   },
   "Liuyanmod:Zhangbashemao": {
     "NAME": "丈八蛇矛",
-    "DESCRIPTION": " 回合开始时可以丢弃任意张牌，每丢弃两张攻击卡回复 [R] 。",
+    "DESCRIPTION": " 回合开始时可以丢弃任意张牌，每丢弃两张卡回复 [R] 。",
     "UPGRADE_DESCRIPTION": " 固有 。 NL 回合开始时可以丢弃任意张牌，每丢弃两张卡回复 [R] 。"
   },
   "Liuyanmod:Zhoumuweiyi": {
@@ -112,8 +112,8 @@
   },
   "Liuyanmod:Quanmouzhuxin": {
     "NAME": "权谋诛心",
-    "DESCRIPTION": "造成 !D! 点伤害。丢弃你手中的所有攻击牌，每丢弃一张攻击牌，额外造成 3 点伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。丢弃你手中的所有攻击牌，每丢弃一张攻击牌，额外造成 *5 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 丢弃所有攻击牌，每丢弃一张，额外造成 3 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 丢弃所有攻击牌，每丢弃一张，额外造成 *5 点伤害。"
   },
   "Liuyanmod:Zhulu": {
     "NAME": "逐鹿",
@@ -162,8 +162,8 @@
   },
   "Liuyanmod:Shandian": {
     "NAME": "闪电",
-    "DESCRIPTION": "抽一张牌。若为技能牌，对所有敌人造成 50  点伤害；否则，自己失去 10 点生命。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "抽一张牌。若为技能牌，对所有敌人造成 50  点伤害；否则，自己失去 10 点生命。 NL  消耗 。"
+    "DESCRIPTION": "抽一张牌。 NL 若为技能牌，对所有敌人造成 50  点伤害； NL 否则，自己失去 10 点生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "抽一张牌。 NL 若为技能牌，对所有敌人造成 50  点伤害； NL 否则，自己失去 10 点生命。 NL  消耗 。"
   },
   "Liuyanmod:Wugufengdeng": {
     "NAME": "五谷丰登",
@@ -302,8 +302,8 @@
   },
   "Liuyanmod:ZhuzhouFenluan": {
     "NAME": "诸洲纷乱",
-    "DESCRIPTION": "liuyanmod:割据 层数翻倍 ，当前能量翻倍。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "liuyanmod:割据 层数翻倍， 当前能量翻倍。 消耗 。"
+    "DESCRIPTION": "获得2层 liuyanmod:割据  ，当前能量翻倍。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "获得2层 liuyanmod:割据， 当前能量翻倍。 NL  消耗 。"
   },
   "Liuyanmod:QunxiongGeju": {
     "NAME": "群雄割据",
@@ -332,8 +332,8 @@
 },
   "Liuyanmod:ZhuLuTianXia": {
     "NAME": "逐鹿天下",
-    "DESCRIPTION": "每打出一张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。",
-    "UPGRADE_DESCRIPTION": "每打出一张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。"
+    "DESCRIPTION": "每打出2张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。",
+    "UPGRADE_DESCRIPTION": "每打出2张攻击牌，摸 !M! 张牌。 NL 获得1层 liuyanmod:割据 。"
   },
   "Liuyanmod:PoJun": {
     "NAME": "破军",

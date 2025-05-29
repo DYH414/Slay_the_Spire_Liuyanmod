@@ -37,7 +37,8 @@ public class Wuku extends CustomCard {
             "Liuyanmod:Baguazhen",
             "Liuyanmod:Zhangbashemao",
             "Liuyanmod:Qinglongyanyuedao",
-            "Liuyanmod:Qinggangjian"
+            "Liuyanmod:Qinggangjian",
+             "Liuyanmod:Tengjia"
     );
 
     public Wuku() {

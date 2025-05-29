@@ -15,6 +15,9 @@ public class ZhuLuPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
+    // 新增：用于计数已打出的攻击牌
+    private int attackCardsPlayed;
+
     public ZhuLuPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
@@ -22,6 +25,7 @@ public class ZhuLuPower extends AbstractPower {
         this.amount = amount;
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
+        this.attackCardsPlayed = 0; // 初始化计数器
 
         String path128 = "Liuyan/img/testimg/TestPower84.png";
         String path48 = "Liuyan/img/testimg/TestPower32.png";
@@ -33,9 +37,14 @@ public class ZhuLuPower extends AbstractPower {
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK && !card.purgeOnUse) {
-            // 打出攻击牌，摸 X 张牌
-            this.flash();
-            this.addToBot(new DrawCardAction(this.owner, this.amount));
+            this.attackCardsPlayed++; // 计数+1
+
+            // 每2张攻击牌触发效果
+            if (this.attackCardsPlayed >= 2) {
+                this.flash();
+                this.addToBot(new DrawCardAction(this.owner, this.amount));
+                this.attackCardsPlayed = 0; // 重置计数器
+            }
         }
     }
 
@@ -43,4 +52,5 @@ public class ZhuLuPower extends AbstractPower {
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
+
 }

@@ -149,7 +149,7 @@
   "Liuyanmod:ZhuLuPower": {
     "NAME": "逐鹿",
     "DESCRIPTIONS": [
-      "每打出一张攻击牌，摸 #b",
+      "每打出2张攻击牌，摸 #b",
       " 张牌。"
     ]
   },

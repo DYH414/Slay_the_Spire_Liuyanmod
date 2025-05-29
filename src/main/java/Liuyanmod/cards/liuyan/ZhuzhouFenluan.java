@@ -2,10 +2,8 @@
 package Liuyanmod.cards.liuyan;
 
 import Liuyanmod.powers.GejuPower;
-import Liuyanmod.powers.LimuPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.defect.DoubleEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,12 +34,8 @@ public class ZhuzhouFenluan extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // 翻倍割据层数
-        if (p.hasPower(GejuPower.POWER_ID)) {
-            GejuPower geju = (GejuPower)p.getPower(GejuPower.POWER_ID);
-            geju.amount *= 2;
-            geju.updateDescription();
-        }
+        // 获得1层割据
+        this.addToBot(new ApplyPowerAction(p, p, new GejuPower(p, 2)));
 
 
 

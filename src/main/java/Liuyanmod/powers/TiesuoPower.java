@@ -2,6 +2,7 @@ package Liuyanmod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -23,6 +24,9 @@ public class TiesuoPower extends AbstractPower {
     // 用于记录当前攻击波次中已传播的生物
     private static final Set<AbstractCreature> linkedThisChain = new HashSet<>();
 
+    // 静态变量记录是否已经发生过传导
+    private static boolean hasChainTriggered = false;
+
     public TiesuoPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
@@ -36,18 +40,22 @@ public class TiesuoPower extends AbstractPower {
         updateDescription();
     }
 
-
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         // 只对非传导伤害（THORNS）做处理
         if (damageAmount > 0 && info.owner != null && info.type != DamageInfo.DamageType.THORNS) {
-            // 新一波原始伤害到来：清空记录
-            linkedThisChain.clear();
+
+            // 如果这是新一轮攻击，重置状态
+            if (!hasChainTriggered) {
+                linkedThisChain.clear();
+            }
 
             // 如果自己还没被记录，就传播
             if (!linkedThisChain.contains(owner)) {
                 linkedThisChain.add(owner);
+                hasChainTriggered = true;
 
+                // 传导伤害到其他有铁索的敌人
                 for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
                     if (mo != owner && mo.hasPower(POWER_ID) && !mo.isDeadOrEscaped()) {
                         flash();
@@ -58,6 +66,16 @@ public class TiesuoPower extends AbstractPower {
                         ));
                     }
                 }
+
+                // 传导完成后，移除所有怪物的铁索power
+                for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
+                    if (mo.hasPower(POWER_ID) && !mo.isDeadOrEscaped()) {
+                        addToBot(new RemoveSpecificPowerAction(mo, mo, POWER_ID));
+                    }
+                }
+
+                // 重置传导状态，为下次攻击做准备
+                hasChainTriggered = false;
             }
         }
         return damageAmount;
