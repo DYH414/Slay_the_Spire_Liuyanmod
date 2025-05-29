@@ -17,7 +17,7 @@ public class Tusheyugui extends CustomRelic {
     private static final String IMG = "Liuyan/img/relics/Tusheyugui.png";
     private static final RelicTier TIER = RelicTier.STARTER;
     private static final LandingSound SOUND = LandingSound.FLAT;
-    private int triggerCount = 0; // 记录触发次数
+    private int triggerCount = 1; // 记录触发次数
     private boolean toggle = false; // 交替音效用
 
     public Tusheyugui() {
@@ -52,7 +52,7 @@ public class Tusheyugui extends CustomRelic {
                         flash();
 
                         triggerCount++;
-                        if (triggerCount % 2 == 0) {
+                        if (triggerCount % 4 == 0) {
                             String sfx;
                             String message;
                             if (toggle) {
