@@ -1,9 +1,9 @@
 package Liuyanmod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -13,37 +13,25 @@ public class JiedongfengPower extends AbstractPower {
     public static final String NAME = strings.NAME;
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
-    public JiedongfengPower(AbstractCreature owner, int multiplier) {
+    public JiedongfengPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = multiplier;
+        this.amount = -1; // -1表示永久能力
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
-        this.loadRegion("storm");
+
+        // 使用自定义图标路径
+        String path128 = "Liuyan/img/powers/ZhuoshaoPower84.jpg";
+        String path48 = "Liuyan/img/powers/ZhuoshaoPower32.jpg";
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
+
         updateDescription();
     }
 
     @Override
     public void updateDescription() {
-        if (this.amount == 2) {
-            this.description = DESCRIPTIONS[0]; // "每次给予敌人的灼烧标记翻倍。"
-        } else {
-            this.description = DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2]; // "每次给予敌人的灼烧标记变为 X 倍。"
-        }
-    }
-
-    // 当施加能力时触发，用于修改灼烧层数
-    @Override
-    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power.ID.equals(ZhuoshaoPower.POWER_ID) && source == this.owner && target != this.owner) {
-            // 闪烁效果提示能力触发
-            this.flash();
-        }
-    }
-
-    // 修改施加能力的数量
-    public int modifyBurnAmount(int originalAmount) {
-        return originalAmount * this.amount;
+        this.description = DESCRIPTIONS[0];
     }
 }

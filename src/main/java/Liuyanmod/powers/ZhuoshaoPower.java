@@ -3,7 +3,7 @@ package Liuyanmod.powers;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,20 +18,46 @@ public class ZhuoshaoPower extends AbstractPower {
     public static final String NAME = strings.NAME;
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
+    // 是否永久保存（被"借东风"影响）
+    public boolean isPermanent = false;
+
     public ZhuoshaoPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.DEBUFF;
-        this.isTurnBased = true; // 标记为回合性能力，随回合减少
+        this.isTurnBased = false; // 改为false，手动控制移除
+        this.loadRegion("flameBarrier");
+
+        // 检查玩家是否有借东风能力，如果有则设为永久
+        if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower(JiedongfengPower.POWER_ID)) {
+            this.isPermanent = true;
+        }
+
+        updateDescription();
+    }
+
+    // 构造函数重载，允许直接指定是否永久
+    public ZhuoshaoPower(AbstractCreature owner, int amount, boolean permanent) {
+        this.name = NAME;
+        this.ID = POWER_ID;
+        this.owner = owner;
+        this.amount = amount;
+        this.type = PowerType.DEBUFF;
+        this.isTurnBased = false;
+        this.isPermanent = permanent;
         this.loadRegion("flameBarrier");
         updateDescription();
     }
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + DESCRIPTIONS[2];
+        if (isPermanent) {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + DESCRIPTIONS[3]; // 永久版本描述
+        } else {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + DESCRIPTIONS[2]; // 临时版本描述
+        }
     }
 
     // 当持有者受到一次伤害后，触发额外灼烧伤害
@@ -51,12 +77,17 @@ public class ZhuoshaoPower extends AbstractPower {
         return damageAmount;
     }
 
-    // 每回合结束时减少1层
+    // 每回合结束时，如果不是永久的，则移除这个power
     @Override
     public void atEndOfRound() {
-        if (this.amount <= 0) {
-            return;
+        if (!isPermanent) {
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
         }
-        this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+    }
+
+    // 设置为永久保存
+    public void makePermanent() {
+        this.isPermanent = true;
+        updateDescription();
     }
 }

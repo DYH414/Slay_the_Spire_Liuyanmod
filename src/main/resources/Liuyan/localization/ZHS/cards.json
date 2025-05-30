@@ -383,8 +383,9 @@
   },
   "Liuyanmod:Jiedongfeng": {
     "NAME": "借东风",
-    "DESCRIPTION": "给予敌人的 liuyanmod:灼烧 层数变成 !M! 倍。",
-    "UPGRADE_DESCRIPTION": "给予敌人的 liuyanmod:灼烧 层数变成 !M! 倍。"
+    "DESCRIPTION": "你造成的 liuyanmod:灼烧 效果永久保存 。",
+    "UPGRADE_DESCRIPTION": "你造成的 liuyanmod:灼烧 效果永久保存。"
+
 
   }
 }

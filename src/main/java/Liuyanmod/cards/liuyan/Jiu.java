@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-
 import static Liuyanmod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 
 public class Jiu extends CustomCard {
@@ -26,26 +25,30 @@ public class Jiu extends CustomCard {
 
     public Jiu() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 1; // 翻倍次数
+        this.baseMagicNumber = this.magicNumber = 1; // 基础效果：1层
         this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new JiuPower(p), baseMagicNumber));
+        // 应用 magicNumber 层 JiuPower
+        for (int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new ApplyPowerAction(p, p, new JiuPower(p), 1));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.baseMagicNumber = this.magicNumber = 2; // 升级后获得2层
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }
+
+    @Override
     public AbstractCard makeCopy() {
         return new Jiu();
     }
-
 }

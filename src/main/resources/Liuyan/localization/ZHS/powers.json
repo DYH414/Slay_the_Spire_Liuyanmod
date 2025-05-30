@@ -97,9 +97,10 @@
   "Liuyanmod:ZhuoshaoPower": {
     "NAME": "灼烧",
     "DESCRIPTIONS": [
-      "当此敌人受到攻击时，受到 ",
-      " 点额外伤害。",
-      "每回合减少 1 层。"
+      "每次受到攻击时，额外受到 #b",
+      " 点伤害。",
+      "回合结束时移除。",
+      "永久保存。"
     ]
   },
   "Liuyanmod:ZhuqueYushanPower": {
@@ -174,7 +175,14 @@
   "Liuyanmod:GuzhenDaidiPower": {
     "NAME": "固阵待敌",
     "DESCRIPTIONS": ["若本回合未使用攻击牌，回合结束时获得 ", " 点格挡。"]
+  },
+  "Liuyanmod:JiedongfengPower": {
+    "NAME": "借东风",
+    "DESCRIPTIONS": [
+      "你造成的 灼烧 效果永久保存。"
+    ]
   }
+
 
 
 }
