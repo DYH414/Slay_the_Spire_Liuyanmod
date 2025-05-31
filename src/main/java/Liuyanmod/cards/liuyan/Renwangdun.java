@@ -38,7 +38,6 @@ public class Renwangdun extends CustomCard {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS);
             initializeDescription();
-            this.isInnate=true;
         }
     }
 

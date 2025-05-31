@@ -52,8 +52,8 @@
   "Liuyanmod:QinglongyanyuedaoPower": {
     "NAME": "青龙偃月刀",
     "DESCRIPTIONS": [
-      "每回合第一次打出攻击牌后，接下来打出的1张攻击牌费用变为0。",
-      " 固有 。 NL 每回合第一次打出攻击牌后，接下来打出的 #b2 张攻击牌费用变为0。"
+      "每回合第一次打出攻击牌后，手牌中的前 #b",
+      " 张攻击牌费用变为 0。"
     ]
   },
   "Liuyanmod:Renwangdun": {

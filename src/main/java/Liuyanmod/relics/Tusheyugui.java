@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Tusheyugui extends CustomRelic {
 
-    public static final String ID = ModHelper.makePath("Tusheyugui");
+    public static final String ID = "Liuyanmod:Tusheyugui";
     private static final String IMG = "Liuyan/img/relics/Tusheyugui.png";
     private static final RelicTier TIER = RelicTier.STARTER;
     private static final LandingSound SOUND = LandingSound.FLAT;
