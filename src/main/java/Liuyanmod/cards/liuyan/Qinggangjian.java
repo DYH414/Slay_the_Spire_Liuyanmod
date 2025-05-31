@@ -25,25 +25,26 @@ public class Qinggangjian extends CustomCard {
                 CardType.POWER, EXAMPLE_GREEN,
                 CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
-  // Qinggangjian.java
-public void use(AbstractPlayer p, AbstractMonster m) {
-    // 无条件赋予能力
-    addToBot(new ApplyPowerAction(p, p, new QinggangjianPower(p)));
-}
-
-
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        // 无条件赋予能力
+        addToBot(new ApplyPowerAction(p, p, new QinggangjianPower(p)));
+    }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-           this.isInnate = true;
-            initializeDescription();
+            this.isInnate = true;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION; // 使用升级后的描述
+            this.initializeDescription();
         }
     }
+
+    @Override
     public AbstractCard makeCopy() {
         return new Qinggangjian();
     }

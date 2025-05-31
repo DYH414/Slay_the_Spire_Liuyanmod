@@ -29,7 +29,6 @@ public class RenwangdunPower extends AbstractPower  {
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
         updateDescription();
-
     }
 
     @Override
@@ -42,8 +41,13 @@ public class RenwangdunPower extends AbstractPower  {
     }
 
     @Override
+    public void stackPower(int stackAmount) {
+        // 仁王盾不允许叠加，保持原有的阈值不变
+        // 这里什么都不做，阻止默认的叠加行为
+    }
+
+    @Override
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
-
 }

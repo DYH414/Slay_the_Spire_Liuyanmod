@@ -60,8 +60,8 @@ public class ExampleMod implements  AddAudioSubscriber, EditKeywordsSubscriber,E
 
     @Override
     public void receiveAddAudio() {
-        BaseMod.addAudio("TUSHEYUGUI_DRAW_1", "Liuyan/sounds/TUSHE_1.ogg");
-        BaseMod.addAudio("TUSHEYUGUI_DRAW_2", "Liuyan/sounds/TUSHE_2.ogg");
+        BaseMod.addAudio("TUSHEYUGUI_DRAW_1", "Liuyan/sounds/SKILL_40601_tushe_1.ogg");
+        BaseMod.addAudio("TUSHEYUGUI_DRAW_2", "Liuyan/sounds/SKILL_40601_tushe_2.ogg");
         BaseMod.addAudio("LIMU_1", "Liuyan/sounds/LIMU_1.ogg");
         BaseMod.addAudio("LIMU_2", "Liuyan/sounds/LIMU_2.ogg");
         BaseMod.addAudio("LONGXING", "Liuyan/sounds/longxing.ogg");

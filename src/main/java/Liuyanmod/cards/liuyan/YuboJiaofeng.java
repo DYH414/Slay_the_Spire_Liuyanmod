@@ -78,8 +78,18 @@ public class YuboJiaofeng extends CustomCard {
                     validCards.addToTop(c);
                 }
 
-                String message = this.amount == 1 ? "选择一张手牌保留至下回合" : "选择 " + this.amount + " 张手牌保留至下回合";
-                AbstractDungeon.gridSelectScreen.open(validCards, this.amount, message, false, false, false, false);
+                // 计算实际可以选择的卡牌数量（不能超过手牌数量）
+                int actualAmount = Math.min(this.amount, p.hand.size());
+
+                String message;
+                if (actualAmount == 1) {
+                    message = "选择一张手牌保留至下回合";
+                } else {
+                    message = "选择最多 " + actualAmount + " 张手牌保留至下回合";
+                }
+
+                // 设置为可以选择少于指定数量的卡牌
+                AbstractDungeon.gridSelectScreen.open(validCards, actualAmount, message, false, false, true, false);
             } else {
                 for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                     c.retain = true;

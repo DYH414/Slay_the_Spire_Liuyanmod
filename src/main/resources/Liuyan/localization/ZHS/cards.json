@@ -47,17 +47,17 @@
   "Liuyanmod:Qinglongyanyuedao": {
     "NAME": "青龙偃月刀",
     "DESCRIPTION": "每回合首次打出一张攻击牌后的手牌前 !M! 张攻击牌费用变为 0。",
-    "UPGRADE_DESCRIPTION": "固有。 NL 每回合首次打出一张攻击牌后的手牌前 !M! 张攻击牌费用变为 0。"
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合首次打出一张攻击牌后的手牌前 !M! 张攻击牌费用变为 0。"
   },
   "Liuyanmod:Guohechaiqiao": {
     "NAME": "过河拆桥",
-    "DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 ",
-    "UPGRADE_DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 "
+    "DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 。"
   },
   "Liuyanmod:Shunshouqianyang": {
     "NAME": "顺手牵羊",
     "DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 "
+    "UPGRADE_DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 。"
   },
   "Liuyanmod:Zhangbashemao": {
     "NAME": "丈八蛇矛",
@@ -157,8 +157,8 @@
   },
   "Liuyanmod:Kongcheng": {
     "NAME": "空城",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 若手牌中没有攻击牌，额外获得 5 点格挡。"
   },
   "Liuyanmod:Shandian": {
     "NAME": "闪电",
@@ -172,8 +172,8 @@
   },
   "Liuyanmod:Qibuchengshi": {
     "NAME": "七步成诗",
-    "DESCRIPTION": " 虚无 。 NL 每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意 NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 。",
-    "UPGRADE_DESCRIPTION": "每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意  NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 。"
+    "DESCRIPTION": " 虚无 。 NL 每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意 NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 和 liuyanmod:立牧 。",
+    "UPGRADE_DESCRIPTION": "每打出一张牌，按顺序触发： NL 抽1张牌 NL 获得4格挡 NL 获得 liuyanmod:酒意  NL 获得1 敏捷  NL 获得 [R]  NL 对所有敌人造成15伤害 NL 获得1层 无实体 和 liuyanmod:立牧 。"
   },
   "Liuyanmod:Qilingong": {
     "NAME": "麒麟弓",
@@ -302,8 +302,8 @@
   },
   "Liuyanmod:ZhuzhouFenluan": {
     "NAME": "诸洲纷乱",
-    "DESCRIPTION": "获得2层 liuyanmod:割据  ，当前能量翻倍。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "获得2层 liuyanmod:割据， 当前能量翻倍。 NL  消耗 。"
+    "DESCRIPTION": "获得2层 liuyanmod:割据 。 NL 当前能量翻倍。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "获得2层 liuyanmod:割据。 NL 当前能量翻倍。 NL  消耗 。"
   },
   "Liuyanmod:QunxiongGeju": {
     "NAME": "群雄割据",

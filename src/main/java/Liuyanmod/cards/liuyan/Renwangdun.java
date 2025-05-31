@@ -18,8 +18,8 @@ public class Renwangdun extends CustomCard {
     public static final String IMG = "Liuyan/img/cards/Renwangdun_power.png";
 
     private static final int COST = 1;
-    private static final int THRESHOLD = 6;
-    private static final int UPGRADE_PLUS = 3;
+    private static final int THRESHOLD = 5;
+    private static final int UPGRADE_PLUS = 2;
 
     public Renwangdun() {
         super(ID, NAME, IMG, COST, DESCRIPTION, CardType.POWER, EXAMPLE_GREEN, CardRarity.RARE, CardTarget.SELF);

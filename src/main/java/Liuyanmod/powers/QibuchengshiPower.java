@@ -69,6 +69,7 @@ public class QibuchengshiPower extends AbstractPower {
             case 6:
                 CardCrawlGame.sound.play("JIUSHI_7");
                 this.addToBot(new ApplyPowerAction(this.owner, this.owner, new IntangiblePlayerPower(this.owner, 1)));
+                this.addToBot(new ApplyPowerAction(this.owner, this.owner, new LimuPower(this.owner)));
                 break;
         }
         step = (step + 1) ;
@@ -99,7 +100,7 @@ public class QibuchengshiPower extends AbstractPower {
             case 3: return "获得1点敏捷";
             case 4: return "获得1点能量";
             case 5: return "对所有敌人造成15点伤害";
-            case 6: return "获得1层无实体";
+            case 6: return "获得1层无实体，获得立牧";
             default: return "";
         }
     }
