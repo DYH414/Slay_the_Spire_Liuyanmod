@@ -8,15 +8,20 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 import static Liuyanmod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 
 public class Guohechaiqiao extends CustomCard {
     public static final String ID = "Liuyanmod:Guohechaiqiao";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "Liuyan/img/cards/Guohechaiqiao_skill.png"; // 你自己放图片的路径
+    private static final String IMG_PATH = "Liuyan/img/cards/Guohechaiqiao_skill.png";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int COST = 1;
+
 
     public Guohechaiqiao() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, EXAMPLE_GREEN, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -26,11 +31,22 @@ public class Guohechaiqiao extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null && !m.isDeadOrEscaped()) {
-            for (AbstractPower power : m.powers) {
+            // 创建 powers 的副本以避免在迭代过程中修改原集合
+            java.util.ArrayList<AbstractPower> powersCopy = new java.util.ArrayList<>(m.powers);
+
+            // 过滤出所有可移除的 BUFF（不再检查黑名单）
+            java.util.ArrayList<AbstractPower> buffsToRemove = new java.util.ArrayList<>();
+            for (AbstractPower power : powersCopy) {
                 if (power.type == AbstractPower.PowerType.BUFF) {
-                    addToBot(new RemoveSpecificPowerAction(m, p, power.ID));
-                    break; // 只移除第一个正面BUFF
+                    buffsToRemove.add(power);
                 }
+            }
+
+            // 如果有可移除的 BUFF，随机选择一个
+            if (!buffsToRemove.isEmpty()) {
+                AbstractPower randomBuff = buffsToRemove.get(new java.util.Random().nextInt(buffsToRemove.size()));
+                addToBot(new RemoveSpecificPowerAction(m, p, randomBuff)); // 修改为直接传递 AbstractPower 对象
+                System.out.println("过河拆桥移除了敌人的 BUFF: " + randomBuff.name);
             }
         }
     }

@@ -44,7 +44,7 @@ public class Huogong extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(3); // 升级时增加3层灼烧，总层数变为8
             initializeDescription();
         }
     }

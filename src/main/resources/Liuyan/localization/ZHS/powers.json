@@ -1,7 +1,7 @@
 {
   "Liuyanmod:JiuPower": {
     "NAME": "酒意激发",
-    "DESCRIPTIONS": ["你的下一张 #y攻击牌 造成 #b双倍伤害 。"]
+    "DESCRIPTIONS": ["这个回合，你的下一张 #y攻击牌 造成 #b双倍伤害 。"]
   },
   "Liuyanmod:QinggangjianPower": {
     "NAME": "青钢剑",

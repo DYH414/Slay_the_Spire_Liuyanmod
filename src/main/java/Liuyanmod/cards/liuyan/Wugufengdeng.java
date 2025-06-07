@@ -47,7 +47,7 @@ public class Wugufengdeng extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             // 升级后多抽1张
-            this.upgradeMagicNumber(1);
+            this.upgradeBaseCost(0);
             this.initializeDescription();
         }
     }

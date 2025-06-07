@@ -34,7 +34,6 @@ public class Wuxiekeji extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardCrawlGame.sound.play("Wuxiekeji",true);
         addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, this.magicNumber), this.magicNumber));
     }
 

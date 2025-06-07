@@ -26,8 +26,8 @@ public class Limu extends CustomCard {
     private static final CardColor COLOR = EXAMPLE_GREEN;
     private boolean toggle = false; // 交替音效用
     public Limu() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-         this.baseMagicNumber =2;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+         this.baseMagicNumber =1;
     }
 
     @Override
@@ -37,9 +37,10 @@ public class Limu extends CustomCard {
         CardCrawlGame.sound.play(sfx,true);
         toggle = !toggle;
         this.addToBot(new GainEnergyAction(baseMagicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new GejuPower(p,1)));
-        // 下个回合不能打攻击牌（缠绕）
         this.addToBot(new ApplyPowerAction(p, p, new LimuPower(p)));
+        this.addToBot(new ApplyPowerAction(p, p, new GejuPower(p,1)));
+
+
 
     }
 
@@ -47,7 +48,7 @@ public class Limu extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

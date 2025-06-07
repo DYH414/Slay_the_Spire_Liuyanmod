@@ -5,13 +5,11 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Liuyanmod.powers.NoBlockThisTurnPower; // 自定义一个禁止格挡的Power
+import com.megacrit.cardcrawl.powers.NoBlockPower; // 直接使用原版的 NoBlockPower
 
 import static Liuyanmod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 
@@ -36,10 +34,10 @@ public class Dandaofuhui extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 群体攻击
-        CardCrawlGame.sound.play("Dandaofuhui",true);
+        CardCrawlGame.sound.play("Dandaofuhui", true);
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        // 本回合禁止获得格挡
-        addToBot(new ApplyPowerAction(p, p, new NoBlockThisTurnPower(p), 1));
+        // 本回合禁止获得格挡，使用原版 NoBlockPower，持续 1 回合
+        addToBot(new ApplyPowerAction(p, p, new NoBlockPower(p, 1, false), 1));
     }
 
     @Override

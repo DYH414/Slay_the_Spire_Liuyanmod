@@ -36,7 +36,7 @@
   },
   "Liuyanmod:Limu": {
     "NAME": "立牧",
-    "DESCRIPTION": "获得 [R]  [R] 。 NL 获得 liuyanmod:立牧 。 NL 获得 liuyanmod:割据 。",
+    "DESCRIPTION": "获得 [R]  。 NL 获得 liuyanmod:立牧 。 NL 获得 liuyanmod:割据 。",
     "UPGRADE_DESCRIPTION": "获得 [R]  [R] 。 NL 获得 liuyanmod:立牧  。 NL 获得 liuyanmod:割据 。"
   },
   "Liuyanmod:Qinggangjian": {
@@ -51,13 +51,13 @@
   },
   "Liuyanmod:Guohechaiqiao": {
     "NAME": "过河拆桥",
-    "DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "使敌人失去一个正面状态。 NL 消耗 。"
+    "DESCRIPTION": "随机移除敌人一个状态。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "随机移除敌人一个状态。 NL 消耗 。"
   },
   "Liuyanmod:Shunshouqianyang": {
     "NAME": "顺手牵羊",
-    "DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。 NL  消耗 。"
+    "DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。(只能获得玩家能拥有的状态） NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "移除敌人的一个正面状态，并获得该状态。(只能获得玩家能拥有的状态） NL  消耗 。"
   },
   "Liuyanmod:Zhangbashemao": {
     "NAME": "丈八蛇矛",
@@ -152,8 +152,8 @@
   },
   "Liuyanmod:Renwangdun": {
     "NAME": "仁王盾",
-    "DESCRIPTION": "受到的不大于 !M! 的伤害时无效。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL 受到的不大于 !M! 的伤害时无效"
+    "DESCRIPTION": "受到的不大于 !M! 的攻击伤害时无效。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 受到的不大于 !M! 的攻击伤害时无效"
   },
   "Liuyanmod:Kongcheng": {
     "NAME": "空城",
