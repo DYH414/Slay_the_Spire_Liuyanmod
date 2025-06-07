@@ -37,7 +37,7 @@ public class Huogong extends CustomCard {
         CardCrawlGame.sound.play("ZHUOSHAO");
         this.addToBot(new DiscardAction(p, p, 1, false));
         this.addToBot(new ApplyPowerAction(m, p,
-                new ZhuoshaoPower(m, BURN), BURN));
+                new ZhuoshaoPower(m, this.magicNumber), this.magicNumber));
     }
 
     @Override
